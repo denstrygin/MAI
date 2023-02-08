@@ -1,0 +1,17 @@
+debug/glabstractpainting.o
+debug/glfigureengine.o
+debug/gllight.o
+debug/glwidget.o
+debug/lightsettingswidget.o
+debug/main.o
+debug/pointfieldwidget.o
+debug/ruledsurfacebycardinalspline.o
+debug/splinesettingswidget.o
+debug/surfacesettingswidget.o
+debug/viewwidget.o
+debug/moc_lightsettingswidget.o
+debug/moc_pointfieldwidget.o
+debug/moc_ruledsurfacebycardinalspline.o
+debug/moc_splinesettingswidget.o
+debug/moc_surfacesettingswidget.o
+debug/moc_viewwidget.o

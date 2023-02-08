@@ -1,0 +1,71 @@
+%\usepackage{fullpage}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[utf8]{inputenc}
+%\usepackage[english,russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{relsize}
+\usepackage{mdframed}
+\usepackage{indentfirst}
+
+% Изменение формата section и subsection
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\bfseries}{}{0pt}{\fontsize{16}{12}\selectfont}
+\titlespacing*{\section}{\parindent}{*1}{1.0ex}
+\titleformat{\subsection}
+{\normalfont\bfseries}{}{0pt}{\fontsize{14}{12}\selectfont}
+\titlespacing*{\subsection}{\parindent}{0.5ex}{1ex}
+
+%отключение нумерации страниц (и для дока, и для содержания)
+%\pagestyle{empty} % для дока
+%\renewcommand*{\addcontentsline}[3]{\addtocontents{#1}{\protect\contentsline{#2}{#3}{}}} % для содержания
+
+%сброс счётчика section после нового part (для корректного отображения содержания)
+\makeatletter
+\@addtoreset{section}{part}
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\parindent \z@ \raggedright
+     \interlinepenalty \@M
+     \normalfont\centering
+     \ifnum \c@secnumdepth >\m@ne
+       \LARGE\bfseries \partname\nobreakspace\thepart
+       \par\nobreak
+     \fi
+     \huge \bfseries #2%
+     \markboth{}{}\par}%
+    \nobreak
+    \vskip 3ex
+    \@afterheading}
+\renewcommand\partname{Topic}
+\makeatother
+
+%команда для печатания больших римских чисел
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+    
+\setcounter{secnumdepth}{0}
+
+% Настройка содержания
+\usepackage{tocloft}
+\setcounter{secnumdepth}{0} % отключение нумерации глав и разделов
+\setlength{\cftbeforesecskip}{1mm} %отступ между секциями \section
+\setlength{\cftbeforesubsecskip}{1mm} %отступ между секциями \subsection
+\renewcommand\cftsecdotsep{\cftdot} % частые точки после глав
+\renewcommand\cftsubsecdotsep{\cftdot} % частые точки после разделов
+
+% Отступы для текста
+\setlength{\parindent}{1.25cm} %красная строка
+%\setlength{\parskip}{1.25em} %отступ между абзацами
+\linespread{1.25} %межстрочный интервал

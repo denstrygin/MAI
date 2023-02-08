@@ -1,0 +1,168 @@
+den@DESKTOP-1B5EV3F:/mnt/c/Users/danst/OneDrive/Документы/GitHub/OC/lab2$ strace -f ./a.out < test.txt 
+execve("./a.out", ["./a.out"], 0x7ffff4d4eb88 /* 20 vars */) = 0
+brk(NULL)                               = 0x7fffd3453000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fffdb5acbf0) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=30760, ...}) = 0
+mmap(NULL, 30760, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcb789c3000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcb789c0000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcb78790000
+mprotect(0x7fcb787b5000, 1847296, PROT_NONE) = 0
+mmap(0x7fcb787b5000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7fcb787b5000
+mmap(0x7fcb7892d000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7fcb7892d000
+mmap(0x7fcb78978000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fcb78978000
+mmap(0x7fcb7897e000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcb7897e000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7fcb789c1380) = 0
+mprotect(0x7fcb78978000, 12288, PROT_READ) = 0
+mprotect(0x7fcb789ce000, 4096, PROT_READ) = 0
+mprotect(0x7fcb789bd000, 4096, PROT_READ) = 0
+munmap(0x7fcb789c3000, 30760)           = 0
+brk(NULL)                               = 0x7fffd3453000
+brk(0x7fffd3474000)                     = 0x7fffd3474000
+read(0, "t", 1)                         = 1
+read(0, "e", 1)                         = 1
+read(0, "x", 1)                         = 1
+read(0, "t", 1)                         = 1
+read(0, ".", 1)                         = 1
+read(0, "t", 1)                         = 1
+read(0, "x", 1)                         = 1
+read(0, "t", 1)                         = 1
+read(0, "\n", 1)                        = 1
+openat(AT_FDCWD, "text.txt", O_WRONLY|O_CREAT|O_APPEND, 0600) = 3
+pipe([4, 5])                            = 0
+pipe([6, 7])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLDstrace: Process 18922 attached
+, child_tidptr=0x7fcb789c1650) = 18922
+[pid 18922] close(5 <unfinished ...>
+[pid 18921] close(4 <unfinished ...>
+[pid 18922] <... close resumed>)        = 0
+[pid 18921] <... close resumed>)        = 0
+[pid 18922] close(6 <unfinished ...>
+[pid 18921] close(7 <unfinished ...>
+[pid 18922] <... close resumed>)        = 0
+[pid 18921] <... close resumed>)        = 0
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] read(0, "H", 1)             = 1
+[pid 18921] read(0, "e", 1)             = 1
+[pid 18921] read(0, "l", 1)             = 1
+[pid 18921] read(0, "l", 1)             = 1
+[pid 18921] read(0, "o", 1)             = 1
+[pid 18921] read(0, ";", 1)             = 1
+[pid 18921] read(0, "\n", 1)            = 1
+[pid 18921] write(5, "\6\0\0\0", 4)     = 4
+[pid 18922] <... read resumed>"\6\0\0\0", 4) = 4
+[pid 18921] write(5, "Hello;", 6 <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... write resumed>)        = 6
+[pid 18922] <... read resumed>"Hello;", 6) = 6
+[pid 18921] read(6,  <unfinished ...>
+[pid 18922] write(7, "\1", 1 <unfinished ...>
+[pid 18921] <... read resumed>"\1", 1)  = 1
+[pid 18922] <... write resumed>)        = 1
+[pid 18921] read(0,  <unfinished ...>
+[pid 18922] write(3, "Hello;", 6 <unfinished ...>
+[pid 18921] <... read resumed>"j", 1)   = 1
+[pid 18922] <... write resumed>)        = 6
+[pid 18921] read(0,  <unfinished ...>
+[pid 18922] write(3, "\n", 1 <unfinished ...>
+[pid 18921] <... read resumed>"k", 1)   = 1
+[pid 18922] <... write resumed>)        = 1
+[pid 18921] read(0,  <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... read resumed>"w", 1)   = 1
+[pid 18921] read(0, "q", 1)             = 1
+[pid 18921] read(0, "h", 1)             = 1
+[pid 18921] read(0, "d", 1)             = 1
+[pid 18921] read(0, "k", 1)             = 1
+[pid 18921] read(0, "l", 1)             = 1
+[pid 18921] read(0, "q", 1)             = 1
+[pid 18921] read(0, "w", 1)             = 1
+[pid 18921] read(0, ".", 1)             = 1
+[pid 18921] read(0, "\n", 1)            = 1
+[pid 18921] write(5, "\v\0\0\0", 4)     = 4
+[pid 18922] <... read resumed>"\v\0\0\0", 4) = 4
+[pid 18921] write(5, "jkwqhdklqw.", 11 <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... write resumed>)        = 11
+[pid 18922] <... read resumed>"jkwqhdklqw.", 11) = 11
+[pid 18921] read(6,  <unfinished ...>
+[pid 18922] write(7, "\1", 1)           = 1
+[pid 18921] <... read resumed>"\1", 1)  = 1
+[pid 18922] write(3, "jkwqhdklqw.", 11 <unfinished ...>
+[pid 18921] read(0,  <unfinished ...>
+[pid 18922] <... write resumed>)        = 11
+[pid 18921] <... read resumed>"w", 1)   = 1
+[pid 18922] write(3, "\n", 1 <unfinished ...>
+[pid 18921] read(0,  <unfinished ...>
+[pid 18922] <... write resumed>)        = 1
+[pid 18921] <... read resumed>"q", 1)   = 1
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] read(0, "h", 1)             = 1
+[pid 18921] read(0, "d", 1)             = 1
+[pid 18921] read(0, "q", 1)             = 1
+[pid 18921] read(0, "l", 1)             = 1
+[pid 18921] read(0, "w", 1)             = 1
+[pid 18921] read(0, "k", 1)             = 1
+[pid 18921] read(0, "d", 1)             = 1
+[pid 18921] read(0, "\n", 1)            = 1
+[pid 18921] write(5, "\t\0\0\0", 4)     = 4
+[pid 18922] <... read resumed>"\t\0\0\0", 4) = 4
+[pid 18921] write(5, "wqhdqlwkd", 9 <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... write resumed>)        = 9
+[pid 18922] <... read resumed>"wqhdqlwkd", 9) = 9
+[pid 18921] read(6,  <unfinished ...>
+[pid 18922] write(7, "\0", 1 <unfinished ...>
+[pid 18921] <... read resumed>"\0", 1)  = 1
+[pid 18922] <... write resumed>)        = 1
+[pid 18921] write(3, "Error\n", 6 <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... write resumed>)        = 6
+[pid 18921] read(0, "q", 1)             = 1
+[pid 18921] read(0, "w", 1)             = 1
+[pid 18921] read(0, "d", 1)             = 1
+[pid 18921] read(0, "h", 1)             = 1
+[pid 18921] read(0, "k", 1)             = 1
+[pid 18921] read(0, "q", 1)             = 1
+[pid 18921] read(0, "w", 1)             = 1
+[pid 18921] read(0, "d", 1)             = 1
+[pid 18921] read(0, "\n", 1)            = 1
+[pid 18921] write(5, "\10\0\0\0", 4)    = 4
+[pid 18922] <... read resumed>"\10\0\0\0", 4) = 4
+[pid 18921] write(5, "qwdhkqwd", 8 <unfinished ...>
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] <... write resumed>)        = 8
+[pid 18922] <... read resumed>"qwdhkqwd", 8) = 8
+[pid 18921] read(6,  <unfinished ...>
+[pid 18922] write(7, "\0", 1)           = 1
+[pid 18921] <... read resumed>"\0", 1)  = 1
+[pid 18922] read(4,  <unfinished ...>
+[pid 18921] write(3, "Error\n", 6)      = 6
+[pid 18921] read(0, "", 1)              = 0
+[pid 18921] write(5, "\377\377\377\377", 4) = 4
+[pid 18922] <... read resumed>"\377\377\377\377", 4) = 4
+[pid 18921] wait4(-1,  <unfinished ...>
+[pid 18922] close(3)                    = 0
+[pid 18922] close(4)                    = 0
+[pid 18922] close(7)                    = 0
+[pid 18922] exit_group(0)               = ?
+[pid 18922] +++ exited with 0 +++
+<... wait4 resumed>NULL, 0, NULL)       = 18922
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=18922, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+close(3)                                = 0
+close(5)                                = 0
+close(6)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

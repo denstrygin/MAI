@@ -1,0 +1,39 @@
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make 
+gcc -std=c99 -pedantic -Wall -c queue.c -o queue.o
+gcc -std=c99 -pedantic -Wall -c labra26.c -o labra26.o
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch queue.h
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make 
+gcc -std=c99 -pedantic -Wall -c queue.c -o queue.o
+gcc -std=c99 -pedantic -Wall -c labra26.c -o labra26.o
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch queue.c
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make
+gcc -std=c99 -pedantic -Wall -c queue.c -o queue.o
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch labra26.c
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make
+gcc -std=c99 -pedantic -Wall -c labra26.c -o labra26.o
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch labra26.o
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch queue.o
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make
+gcc  queue.o labra26.o -o prog
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch queue.h
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make queue.o
+gcc -std=c99 -pedantic -Wall -c queue.c -o queue.o
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make queue.o
+make: `queue.o' is up to date.
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ touch queue.c lab26.c
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra25$ make prog
+gcc -std=c99 -pedantic -Wall -c queue.c -o queue.o
+gcc -std=c99 -pedantic -Wall -c labra26.c -o labra26.o
+gcc  queue.o labra26.o -o prog
+В makefile:
+$< — входной .c файл
+.c.o — цель для всех обьектных файлов (любой .o можно взять из .c)
+$@ — текущая цель
+
+Если просто писать make, то выполняется первая цель.

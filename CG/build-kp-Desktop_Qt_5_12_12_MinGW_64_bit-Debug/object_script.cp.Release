@@ -1,0 +1,17 @@
+release/glabstractpainting.o
+release/glfigureengine.o
+release/gllight.o
+release/glwidget.o
+release/lightsettingswidget.o
+release/main.o
+release/pointfieldwidget.o
+release/ruledsurfacebycardinalspline.o
+release/splinesettingswidget.o
+release/surfacesettingswidget.o
+release/viewwidget.o
+release/moc_lightsettingswidget.o
+release/moc_pointfieldwidget.o
+release/moc_ruledsurfacebycardinalspline.o
+release/moc_splinesettingswidget.o
+release/moc_surfacesettingswidget.o
+release/moc_viewwidget.o

@@ -1,0 +1,5 @@
+C:/Users/danst/OneDrive/Документы/GitHub/CG/build-lab1-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/lab1.dir
+C:/Users/danst/OneDrive/Документы/GitHub/CG/build-lab1-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/danst/OneDrive/Документы/GitHub/CG/build-lab1-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/danst/OneDrive/Документы/GitHub/CG/build-lab1-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/lab1_autogen_timestamp_deps.dir
+C:/Users/danst/OneDrive/Документы/GitHub/CG/build-lab1-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/lab1_autogen.dir

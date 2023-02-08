@@ -1,0 +1,50 @@
+c:\users\augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.exe.config
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.exe
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.pdb
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.dll
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.dll
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.xml
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.pdb
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.xml
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.pdb
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.xml
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.csprojResolveAssemblyReference.cache
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.Form1.resources
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.Properties.Resources.resources
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.GenerateResource.Cache
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.exe
+C:\Users\Augustus\documents\visual studio 2015\Projects\SharpGL\SharpGL\obj\Debug\SharpGL.pdb
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.exe.config
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.exe
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.pdb
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.exe
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.pdb
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.dll
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.dll
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.xml
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.pdb
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.xml
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.pdb
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.xml
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.csprojResolveAssemblyReference.cache
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.Form1.resources
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.Properties.Resources.resources
+C:\Users\Augustus\Desktop\Lesson2\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.GenerateResource.Cache
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.exe.config
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.exe
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.pdb
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.xml
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.pdb
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.SceneGraph.xml
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.pdb
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\bin\Debug\SharpGL.WinForms.xml
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.AssemblyReference.cache
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.Form1.resources
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.Properties.Resources.resources
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.GenerateResource.cache
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.CoreCompileInputs.cache
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.csproj.CopyComplete
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.exe
+C:\Users\danst\OneDrive\my documents\GitHub\CG\SharpGL\SharpGL\obj\Debug\SharpGL.pdb

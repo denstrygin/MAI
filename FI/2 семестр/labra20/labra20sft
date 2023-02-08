@@ -1,0 +1,233 @@
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort fileforsort.txt 
+1.year
+2555 2636
+2.week
+2пути
+2раза
+42 78 25
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ nano file1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ nano fileforsort.txt 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort fileforsort.txt 
+1555 2636
+2.year
+3.week
+3пути
+3раза
+42 78 25
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -r fileforsort.txt 
+шесть семь восемь
+раз два три четыре пять 
+девять десять
+the quicker thechnological progress will be
+the more computers and robots are used in industry
+one of the most promising way to huppy future
+is programmer
+home the best
+come to me 
+and do my laboratory work
+all the west
+42 78 25
+3раза
+3пути
+3.week
+2.year
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ cat fileforsort.txt 
+all the west
+home the best
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+one of the most promising way to huppy future
+is programmer
+раз два три четыре пять 
+шесть семь восемь
+девять десять
+42 78 25
+1555 2636
+2.year
+3.week
+3раза
+3пути
+come to me 
+and do my laboratory work
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort fileforsort.txt 
+1555 2636
+2.year
+3.week
+3пути
+3раза
+42 78 25
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -r fileforsort.txt 
+шесть семь восемь
+раз два три четыре пять 
+девять десять
+the quicker thechnological progress will be
+the more computers and robots are used in industry
+one of the most promising way to huppy future
+is programmer
+home the best
+come to me 
+and do my laboratory work
+all the west
+42 78 25
+3раза
+3пути
+3.week
+2.year
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -k2 fileforsort.txt 
+2.year
+3.week
+3пути
+3раза
+1555 2636
+42 78 25
+and do my laboratory work
+the more computers and robots are used in industry
+one of the most promising way to huppy future
+is programmer
+the quicker thechnological progress will be
+home the best
+all the west
+come to me 
+раз два три четыре пять 
+девять десять
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -n fileforsort.txt 
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+2.year
+3.week
+3пути
+3раза
+42 78 25
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ nano fileforsort.txt 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ cat fileforsort.txt 
+all the west
+all the west
+home the best
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+one of the most promising way to huppy future
+is programmer
+раз два три четыре пять 
+шесть семь восемь
+девять десять
+42 78 25
+1555 2636
+2.year
+2.year
+3.week
+3раза
+3пути
+come to me 
+and do my laboratory work
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -u fileforsort.txt 
+1555 2636
+2.year
+3.week
+3пути
+3раза
+42 78 25
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -nk2 -k3
+^X^C
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -nk2 -k4 fileforsort.txt 
+2.year
+2.year
+3.week
+3пути
+3раза
+all the west
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+42 78 25
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ ls -la|sort -nk2 -k4
+-rw-r--r-- 1 dan dan  396 мар 14 08:00 fileforsort.txt
+-rw-r--r-- 1 dan dan 8511 фев 27 14:27 labra20
+drwxr-xr-x 2 dan dan 4096 мар 14 08:00 .
+drwxr-xr-x 9 dan dan 4096 мар 13 15:15 ..
+итого 24
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ ls -la
+итого 24
+drwxr-xr-x 2 dan dan 4096 мар 14 08:00 .
+drwxr-xr-x 9 dan dan 4096 мар 13 15:15 ..
+-rw-r--r-- 1 dan dan  396 мар 14 08:00 fileforsort.txt
+-rw-r--r-- 1 dan dan 8511 фев 27 14:27 labra20
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ ls -la|sort -nk7 -k2
+итого 24
+drwxr-xr-x 9 dan dan 4096 мар 13 15:15 ..
+-rw-r--r-- 1 dan dan  396 мар 14 08:00 fileforsort.txt
+drwxr-xr-x 2 dan dan 4096 мар 14 08:00 .
+-rw-r--r-- 1 dan dan 8511 фев 27 14:27 labra20
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ ls -la|sort -nk7 -k2,5
+итого 24
+drwxr-xr-x 9 dan dan 4096 мар 13 15:15 ..
+-rw-r--r-- 1 dan dan  396 мар 14 08:00 fileforsort.txt
+drwxr-xr-x 2 dan dan 4096 мар 14 08:00 .
+-rw-r--r-- 1 dan dan 8511 фев 27 14:27 labra20
+

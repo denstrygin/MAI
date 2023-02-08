@@ -1,0 +1,4 @@
+SELECT  лиенты.название;
+ FROM ;
+      лиенты;
+ WHERE  ( код_клиента ) IN (SELECT код_клиента FROM (SELECT код_клиента, COUNT(код_клиента) as количество FROM —писок_покупок GROUP BY код_клиента) as b WHERE количество = (SELECT MAX(количество) FROM (SELECT код_клиента, COUNT(код_клиента) as количество FROM —писок_покупок GROUP BY код_клиента) as b))

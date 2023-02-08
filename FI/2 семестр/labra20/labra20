@@ -1,0 +1,292 @@
+                                                                                                                                                           CMP
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ nano text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ nano text2.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cmp text1.txt text2.txt
+text1.txt text2.txt различаются: байт 5, строка 1
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cmp -l text1.txt text2.txt 
+ 5 157 154
+ 6  40 157
+ 7 167  40
+ 8 157 167
+ 9 162 145
+10 154 163
+11 144 164
+14 111 151
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat text1.txt 
+Hello world!
+I was born!
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat text2.txt 
+Helllo west!
+i was born!
+                                                                                                                                                           DIFF
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ nano text1.txt 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ nano text2.txt 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat text1.txt 
+Hello world!
+I was born!
+It is amazing!
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat text2.txt 
+Helllo world!
+I was born!
+What a wonderful place!
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ diff text1.txt text2.txt 
+1c1
+< Hello world!
+---
+> Helllo world!
+3c3
+< It is amazing!
+---
+> What a wonderful place!
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ diff -y text1.txt text2.txt 
+Hello world!						      |	Helllo world!
+I was born!							I was born!
+It is amazing!						      |	What a wonderful place!
+                                                                                                                                                             DU
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ du text1.txt 
+4	text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ du text1.txt -h
+4,0K	text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ du text1.txt -b
+40	text1.txt
+                                                                                                                                                             OD
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat text1.txt 
+Hello world!
+I was born!
+It is amazing!
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ od text1.txt 
+0000000 062510 066154 020157 067567 066162 020544 044412 073440
+0000020 071541 061040 071157 020556 044412 020164 071551 060440
+0000040 060555 064572 063556 005041
+0000050
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ od -
+Hello world!
+I was born!0000000 062510 066154 020157 067567 066162 020544 044412 073440
+0000020 071541 061040 071157 020556
+0000030
+                                                                                                                                                             HEAD
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ head -n1 text1.txt 
+Hello world!
+                                                                                                                                                             TAIL
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ tail -n1 text1.txt 
+It is amazing!
+                                                                                                                                                             WC
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ wc -lm text1.txt 
+ 3 40 text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ wc -l text1.txt 
+3 text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ wc -m text1.txt 
+40 text1.txt
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ wc 
+Hello world!
+      1       2      13
+                                                                                                                                                               TAR
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ tar -cf archive.tar text1.txt text2.txt 
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ ls -l
+итого 184
+-rw-r--r-- 1 dan dan 10240 фев 27 13:26  archive.tar
+-rw-r--r-- 1 dan dan   163 фев 27 11:06  buff.c
+drwxr-xr-x 2 dan dan  4096 дек 24 17:53  labra10
+-rwxr-xr-x 1 dan dan 12480 ноя 29 19:03  labra11
+-rw-r--r-- 1 dan dan  4798 ноя 29 19:04  labra11.c
+-rwxr-xr-x 1 dan dan  8448 дек  1 21:31  labra12
+-rw-r--r-- 1 dan dan  1379 дек  1 21:31  labra12.c
+drwxr-xr-x 2 dan dan  4096 дек 24 17:12  labra13
+-rwxr-xr-x 1 dan dan 40184 дек 16 16:45  labra14
+-rw-r--r-- 1 dan dan  1960 дек 16 16:45  labra14.c
+-rwxr-xr-x 1 dan dan 12672 дек 26 20:35  labra15
+-rw-r--r-- 1 dan dan  2004 дек 26 19:59  labra15.c
+-rw-r--r-- 1 dan dan  3192 фев 27 11:25  labra20
+-rwxr-xr-x 1 dan dan    92 фев 20 12:16  labra21.sh
+drwxr-xr-x 2 dan dan  4096 ноя 10 09:57  labra8
+drwxr-xr-x 2 dan dan  4096 дек  2 19:37  labra9
+-rw-r--r-- 1 dan dan    40 фев 27 08:51  text1.txt
+-rw-r--r-- 1 dan dan    50 фев 27 08:52  text2.txt
+-rw-r--r-- 1 dan dan   561 ноя 25 16:03 'доработка лабры 1-2 и 3'
+-rw-rw-r-- 1 dan dan 19253 ноя 18 20:38  Реферат.odt
+drwxr-xr-x 2 dan dan  4096 фев 20 09:38 'скрипты для bash'
+drwxr-xr-x 2 dan dan  4096 дек 17 13:08 'функции на языке С'
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ tar -tvf archive.tar
+-rw-r--r-- dan/dan          40 2020-02-27 08:51 text1.txt
+-rw-r--r-- dan/dan          50 2020-02-27 08:52 text2.txt
+                                                                                                                                                               TOUCH
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ touch file
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ touch file1
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ ls -l
+итого 184
+-rw-r--r-- 1 dan dan 10240 фев 27 13:26  archive.tar
+-rw-r--r-- 1 dan dan   163 фев 27 11:06  buff.c
+-rw-r--r-- 1 dan dan     0 фев 27 13:29  file
+-rw-r--r-- 1 dan dan     0 фев 27 13:29  file1
+drwxr-xr-x 2 dan dan  4096 дек 24 17:53  labra10
+-rwxr-xr-x 1 dan dan 12480 ноя 29 19:03  labra11
+-rw-r--r-- 1 dan dan  4798 ноя 29 19:04  labra11.c
+-rwxr-xr-x 1 dan dan  8448 дек  1 21:31  labra12
+-rw-r--r-- 1 dan dan  1379 дек  1 21:31  labra12.c
+drwxr-xr-x 2 dan dan  4096 дек 24 17:12  labra13
+-rwxr-xr-x 1 dan dan 40184 дек 16 16:45  labra14
+-rw-r--r-- 1 dan dan  1960 дек 16 16:45  labra14.c
+-rwxr-xr-x 1 dan dan 12672 дек 26 20:35  labra15
+-rw-r--r-- 1 dan dan  2004 дек 26 19:59  labra15.c
+-rw-r--r-- 1 dan dan  3192 фев 27 11:25  labra20
+-rwxr-xr-x 1 dan dan    92 фев 20 12:16  labra21.sh
+drwxr-xr-x 2 dan dan  4096 ноя 10 09:57  labra8
+drwxr-xr-x 2 dan dan  4096 дек  2 19:37  labra9
+-rw-r--r-- 1 dan dan    40 фев 27 08:51  text1.txt
+-rw-r--r-- 1 dan dan    50 фев 27 08:52  text2.txt
+-rw-r--r-- 1 dan dan   561 ноя 25 16:03 'доработка лабры 1-2 и 3'
+-rw-rw-r-- 1 dan dan 19253 ноя 18 20:38  Реферат.odt
+drwxr-xr-x 2 dan dan  4096 фев 20 09:38 'скрипты для bash'
+drwxr-xr-x 2 dan dan  4096 дек 17 13:08 'функции на языке С'
+                                                                                                                                                              INDENT
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat test.c 
+#include <stdio.h>
+
+void main(){
+printf("Hello world\n");
+return 0;
+}
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ indent test.c
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ cat test.c
+#include <stdio.h>
+
+void
+main ()
+{
+  printf ("Hello world\n");
+  return 0;
+}
+                                                                                                                                                             GREP
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты$ grep hi
+abcd hiwbdjwk
+abcd hiwbdjwk
+feebfbhi
+																			     SORT
+
+feebfbhi
+
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ ls -l
+итого 24
+-rw-r--r-- 1 dan dan  396 мар 14  2020 fileforsort.txt
+-rw-r--r-- 1 dan dan 8511 мар 14  2020 labra20
+-rw-r--r-- 1 dan dan 6917 мар 14  2020 labra20sft
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort fileforsort.txt 
+1555 2636
+2.year
+2.year
+3.week
+3пути
+3раза
+42 78 25
+all the west
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -r fileforsort.txt 
+шесть семь восемь
+раз два три четыре пять 
+девять десять
+the quicker thechnological progress will be
+the more computers and robots are used in industry
+one of the most promising way to huppy future
+is programmer
+home the best
+come to me 
+and do my laboratory work
+all the west
+all the west
+42 78 25
+3раза
+3пути
+3.week
+2.year
+2.year
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -k2 fileforsort.txt 
+2.year
+2.year
+3.week
+3пути
+3раза
+1555 2636
+42 78 25
+and do my laboratory work
+the more computers and robots are used in industry
+one of the most promising way to huppy future
+is programmer
+the quicker thechnological progress will be
+home the best
+all the west
+all the west
+come to me 
+раз два три четыре пять 
+девять десять
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -nk2 fileforsort.txt 
+2.year
+2.year
+3.week
+3пути
+3раза
+all the west
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+42 78 25
+1555 2636
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -u fileforsort.txt 
+1555 2636
+2.year
+3.week
+3пути
+3раза
+42 78 25
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+dan@dan-Aspire-A315-41G:~/Рабочий стол/лаброты/labra20$ sort -nk2 -k3 fileforsort.txt 
+2.year
+2.year
+3.week
+3пути
+3раза
+all the west
+all the west
+and do my laboratory work
+come to me 
+home the best
+is programmer
+one of the most promising way to huppy future
+the more computers and robots are used in industry
+the quicker thechnological progress will be
+девять десять
+раз два три четыре пять 
+шесть семь восемь
+42 78 25
+1555 2636
+
+

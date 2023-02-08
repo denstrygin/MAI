@@ -1,0 +1,11 @@
+debug/glabstractpainting.o
+debug/glfigureengine.o
+debug/gllight.o
+debug/glellipsoid.o
+debug/glwidget.o
+debug/lightsettingswidget.o
+debug/main.o
+debug/viewwidget.o
+debug/moc_glfigureengine.o
+debug/moc_lightsettingswidget.o
+debug/moc_viewwidget.o

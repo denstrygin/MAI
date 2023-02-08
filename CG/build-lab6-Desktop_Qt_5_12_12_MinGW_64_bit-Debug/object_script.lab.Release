@@ -1,0 +1,11 @@
+release/glabstractpainting.o
+release/glfigureengine.o
+release/gllight.o
+release/glellipsoid.o
+release/glwidget.o
+release/lightsettingswidget.o
+release/main.o
+release/viewwidget.o
+release/moc_glfigureengine.o
+release/moc_lightsettingswidget.o
+release/moc_viewwidget.o

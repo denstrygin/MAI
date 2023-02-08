@@ -1,0 +1,4 @@
+/mnt/c/Users/danst/OneDrive/Документы/GitHub/CG/glad/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/danst/OneDrive/Документы/GitHub/CG/glad/CMakeFiles/glad.dir
+/mnt/c/Users/danst/OneDrive/Документы/GitHub/CG/glad/CMakeFiles/edit_cache.dir
+/mnt/c/Users/danst/OneDrive/Документы/GitHub/CG/glad/CMakeFiles/glad-generate-files.dir

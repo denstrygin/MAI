@@ -1,0 +1,117 @@
+\documentclass[12pt,a5paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+%дополнительные символы для математики
+\usepackage{amssymb}
+%отступы для страницы
+\usepackage{geometry}
+\geometry{left=1.5cm}
+\geometry{right=1.5cm}
+\geometry{top=2.5cm}
+\geometry{bottom=1cm}
+%установка отступов для текста
+\def \tab{3ex}
+\setlength{\parindent}{\tab}
+\setlength{\parskip}{0em}
+% настройки колонтитула
+\usepackage{fancyhdr}
+\setcounter{page}{278}
+\fancyhead{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[CO]{\textit{Круговые функции}}
+\fancyhead[CE]{\textit{Глава 19}}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.0 mm}% толщина отделяющей полоски сверху
+\renewcommand{\headrulewidth}{0.2 mm} %толщина отделяющей полоски снизу (её нет)
+\fancyfootoffset[R]{0cm} %линия во всю страницу
+
+\pagestyle{fancy}
+\begin{document}
+    \textbf{Теорема 318. } \textit{Для $|x| \leqslant 1$ существует точно одно
+    $\nu$ такое, что}
+    \begin{center}
+        $cos\,y=x, \;\;\;\;\;\;\;\;\; 0\,{\leqslant}\,y\,{\leqslant}\,\pi,$
+    \end{center}
+    \textit{а именно,}
+    \begin{center}
+        $\displaystyle\nu=\frac{\pi}{2}-arc\;sin{x}.$
+    \end{center}
+    
+    Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о. Требования
+    \begin{center}
+        $cos\,y=x, \;\;\;\;\;\;\;\;\; 0\,{\leqslant}\,y\,{\leqslant}\,\pi$
+    \end{center}
+    равносильны требованиям
+    \begin{center}
+        $\displaystyle sin(\frac{\pi}{2}-y)=x\;\;\;\;\;\;\;\;\; -\frac{\pi}{2}\,{\leqslant}\,\frac{\pi}{2}-y\,{\leqslant}\,\frac{\pi}{2},$
+    \end{center}
+    и, следовательно,
+    \begin{center}
+        $\displaystyle\frac{\pi}{2}-y=arc\,sinx.$
+    \end{center}
+
+    \textbf{Определение 74.} arc\,cos \textit{x для $|x|\,{\leqslant}\,1$ есть y из теоремы }318.
+    
+    arc\,cos читается: арккосинус (или аркус косинус).
+    
+    \textbf{Теорема 319. }$\displaystyle\frac{d\,arc\,cosx}{dx}=-\frac{1}{1-x^2}$ \textit{для} $|x|<1$.
+   
+    Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о. Из теорем 318 и 317 следует
+    \begin{center}
+        $(arc\,cosx)'=(\displaystyle\frac{\pi}{2}-arc\,sinx)'=-(arc\,sinx)'=-\frac{1}{1-x^2}$.
+    \end{center}
+    
+    \textbf{Теорема 320. }\textit{Для каждого x существует точно одно y такое, что}
+    \begin{center}
+        $\displaystyle tg\,y=x, \;\;\;\;\;\;\;\; -\frac{\pi}{2}<y<\frac{\pi}{2}$
+    \end{center}
+    \textit{а именно,}
+    \begin{center}
+        $\displaystyle\nu=arc\;sin{\frac{x}{1+x^2}}.$
+    \end{center}
+    
+    Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о. 1) Для $-\displaystyle\frac{\pi}{2}<y<\frac{\pi}{2}$ имеем
+    \begin{center}
+        $(tg\,y)'=\displaystyle\frac{1}{cos^2y}>0.$
+    \end{center}
+
+    \newpage
+    \pagestyle{fancy}
+    \hspace{-\tab}Следовательно, может существовать, самое большое, одно требуемое y.
+    
+    2)Так как
+    \begin{center}
+        $\displaystyle|\frac{x}{\sqrt{1+x^2}}|=\sqrt{\frac{x^2}{1+x^2}}<1$,
+    \end{center}
+    
+    \hspace{-\tab}то для
+    \begin{center}
+        $\displaystyle\nu=arc\;sin{\frac{x}{\sqrt{1+x^2}}}$
+    \end{center}
+    
+    \hspace{-\tab}имеем
+    \begin{center}
+        $|y|<\displaystyle\frac{\pi}{2},$\\
+        $cos\,y>0,$\\
+        $sin\,y=\displaystyle\frac{x}{\sqrt{1+x^2}},$\\
+        $cos^2y=1-sin^2y=1-\displaystyle\frac{x^2}{1+x^2}=\frac{1}{1+x^2},$\\
+        $cos\,y=\displaystyle\frac{1}{\sqrt{1+x^2}},$\\
+        $tg\,y=\displaystyle\frac{sin\,y}{cos\,y}=x.$
+    \end{center}
+    
+    \textbf{Определение 75. }$arc\;tg\;x$ \textit{есть из теоремы} 320.\\
+    arc\,tg читается: аркангес (или аркус тангенс).
+    
+    \textbf{Теорема 321.  } $\displaystyle\frac{d\,arc\,tgx}{dx}=\frac{1}{1+x^2}$
+    
+    Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о. Из теорем 320 и 317 следует
+    \begin{center}
+        $(arc\,tgx)'=(arc\,sin\displaystyle\frac{x}{\sqrt{1+x^2}})=\frac{1}{\sqrt{1-\frac{x^2}{1+x^2}}}(\frac{x}{\sqrt{1+x^2}})'=$\\
+        $\displaystyle=\sqrt{1+x^2}\frac{\sqrt{1+x^2}-\frac{x^2}{\sqrt{1+x^2}}}{1+x^2}=\frac{1}{1+x^2}$
+    \end{center}
+    
+    \textbf{Теорема 322. }\textit{Для каждого x существует точно одно y такое, что}
+    \begin{center}
+        $ctg\,y=x, \;\;\;\;\;\;\;\;\; 0<y<\pi,$
+    \end{center}
+\end{document}

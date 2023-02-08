@@ -1,0 +1,551 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00 36557124     0.00     0.00  TData::operator[](unsigned long) const
+  0.00      0.00     0.00 16621147     0.00     0.00  TData::Size() const
+  0.00      0.00     0.00 14198930     0.00     0.00  char* std::__niter_base<char*>(char*)
+  0.00      0.00     0.00 12702180     0.00     0.00  TAvl::Height(TAvlNode const*)
+  0.00      0.00     0.00  9095698     0.00     0.00  char* std::__miter_base<char*>(char*)
+  0.00      0.00     0.00  7132500     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00  7132500     0.00     0.00  operator<(TData const&, TData const&)
+  0.00      0.00     0.00  5103232     0.00     0.00  char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*)
+  0.00      0.00     0.00  5103232     0.00     0.00  char* std::__niter_wrap<char*>(char* const&, char*)
+  0.00      0.00     0.00  4760302     0.00     0.00  TData::~TData()
+  0.00      0.00     0.00  4547849     0.00     0.00  char* std::__copy_move_a<false, char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00  4547849     0.00     0.00  char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00  4547849     0.00     0.00  char* std::copy<char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00  3982868     0.00     0.00  TData::TData(TData const&)
+  0.00      0.00     0.00  3207363     0.00     0.00  TAvl::ReHeight(TAvlNode*)
+  0.00      0.00     0.00  3207363     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00  3143727     0.00     0.00  TAvl::Balance(TAvlNode const*)
+  0.00      0.00     0.00  3121731     0.00     0.00  TAvl::ReBalance(TAvlNode*)
+  0.00      0.00     0.00  2426382     0.00     0.00  operator>(TData const&, TData const&)
+  0.00      0.00     0.00  2333572     0.00     0.00  TData::operator[](unsigned long)
+  0.00      0.00     0.00  1110766     0.00     0.00  char const* std::__miter_base<char const*>(char const*)
+  0.00      0.00     0.00  1110766     0.00     0.00  char const* std::__niter_base<char const*>(char const*)
+  0.00      0.00     0.00   787547     0.00     0.00  std::remove_reference<TData&>::type&& std::move<TData&>(TData&)
+  0.00      0.00     0.00   564981     0.00     0.00  TData::operator=(TData const&)
+  0.00      0.00     0.00   555384     0.00     0.00  operator>>(std::istream&, TData&)
+  0.00      0.00     0.00   555383     0.00     0.00  TData::TData(char const*)
+  0.00      0.00     0.00   555383     0.00     0.00  char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00   555383     0.00     0.00  char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00   555383     0.00     0.00  char* std::copy<char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00   333333     0.00     0.00  TAvlFinal::Upper(TData&)
+  0.00      0.00     0.00   222051     0.00     0.00  TData::TData()
+  0.00      0.00     0.00   111283     0.00     0.00  TAvl::Find(TData)
+  0.00      0.00     0.00   111283     0.00     0.00  TAvl::Find(TAvlNode*, TData)
+  0.00      0.00     0.00   111283     0.00     0.00  TAvlFinal::DFind(TData const&)
+  0.00      0.00     0.00   111069     0.00     0.00  TAvl::DeletePrint(TData)
+  0.00      0.00     0.00   111069     0.00     0.00  TAvl::RemovePrint(TAvlNode*, TData, bool const&)
+  0.00      0.00     0.00   111069     0.00     0.00  TAvlFinal::DRemove()
+  0.00      0.00     0.00   110981     0.00     0.00  TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&)
+  0.00      0.00     0.00   110981     0.00     0.00  TAvl::InsPrint(TData, unsigned long)
+  0.00      0.00     0.00   110981     0.00     0.00  TAvlFinal::DInsert()
+  0.00      0.00     0.00    73057     0.00     0.00  TAvlNode::TAvlNode(TData, unsigned long)
+  0.00      0.00     0.00    73057     0.00     0.00  TAvlNode::~TAvlNode()
+  0.00      0.00     0.00    23904     0.00     0.00  TAvl::RotateLeft(TAvlNode*)
+  0.00      0.00     0.00    23225     0.00     0.00  TAvl::RotateRight(TAvlNode*)
+  0.00      0.00     0.00    10243     0.00     0.00  TAvl::RotateLeftRight(TAvlNode*)
+  0.00      0.00     0.00     9598     0.00     0.00  TAvl::RemoveMin(TAvlNode*, TAvlNode*)
+  0.00      0.00     0.00     6264     0.00     0.00  TAvl::RotateRightLeft(TAvlNode*)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN4TAvl10RotateLeftEP8TAvlNode
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN5TDataC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl::TreeDelete(TAvlNode*)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl::TAvl()
+  0.00      0.00     0.00        1     0.00     0.00  TAvl::~TAvl()
+  0.00      0.00     0.00        1     0.00     0.00  TAvlFinal::TAvlFinal()
+  0.00      0.00     0.00        1     0.00     0.00  TAvlFinal::~TAvlFinal()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00 36557124/36557124     operator<(TData const&, TData const&) [14]
+[8]      0.0    0.00    0.00 36557124         TData::operator[](unsigned long) const [8]
+-----------------------------------------------
+                0.00    0.00  333333/16621147     TAvlFinal::Upper(TData&) [37]
+                0.00    0.00 16287814/16621147     operator<(TData const&, TData const&) [14]
+[9]      0.0    0.00    0.00 16621147         TData::Size() const [9]
+-----------------------------------------------
+                0.00    0.00  555383/14198930     char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+                0.00    0.00 13643547/14198930     char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [19]
+[10]     0.0    0.00    0.00 14198930         char* std::__niter_base<char*>(char*) [10]
+-----------------------------------------------
+                0.00    0.00 6287454/12702180     TAvl::Balance(TAvlNode const*) [24]
+                0.00    0.00 6414726/12702180     TAvl::ReHeight(TAvlNode*) [22]
+[11]     0.0    0.00    0.00 12702180         TAvl::Height(TAvlNode const*) [11]
+-----------------------------------------------
+                0.00    0.00 9095698/9095698     char* std::copy<char*, char*>(char*, char*, char*) [20]
+[12]     0.0    0.00    0.00 9095698         char* std::__miter_base<char*>(char*) [12]
+-----------------------------------------------
+                0.00    0.00 7132500/7132500     operator<(TData const&, TData const&) [14]
+[13]     0.0    0.00    0.00 7132500         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [13]
+-----------------------------------------------
+                0.00    0.00 1567168/7132500     TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+                0.00    0.00 1567607/7132500     TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00 1571343/7132500     TAvl::Find(TAvlNode*, TData) [40]
+                0.00    0.00 2426382/7132500     operator>(TData const&, TData const&) [26]
+[14]     0.0    0.00    0.00 7132500         operator<(TData const&, TData const&) [14]
+                0.00    0.00 36557124/36557124     TData::operator[](unsigned long) const [8]
+                0.00    0.00 16287814/16621147     TData::Size() const [9]
+                0.00    0.00 7132500/7132500     unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [13]
+-----------------------------------------------
+                0.00    0.00  555383/5103232     char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [34]
+                0.00    0.00 4547849/5103232     char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [18]
+[15]     0.0    0.00    0.00 5103232         char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00  555383/5103232     char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+                0.00    0.00 4547849/5103232     char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [19]
+[16]     0.0    0.00    0.00 5103232         char* std::__niter_wrap<char*>(char* const&, char*) [16]
+-----------------------------------------------
+                0.00    0.00       1/4760302     main [6]
+                0.00    0.00   73057/4760302     TAvlNode::~TAvlNode() [49]
+                0.00    0.00  110981/4760302     TAvl::InsPrint(TData, unsigned long) [46]
+                0.00    0.00  111069/4760302     TAvl::DeletePrint(TData) [42]
+                0.00    0.00  111283/4760302     TAvl::Find(TData) [39]
+                0.00    0.00  221962/4760302     TAvlFinal::DInsert() [47]
+                0.00    0.00  222138/4760302     TAvlFinal::DRemove() [44]
+                0.00    0.00  222566/4760302     TAvlFinal::DFind(TData const&) [41]
+                0.00    0.00  555383/4760302     operator>>(std::istream&, TData&) [32]
+                0.00    0.00 1529561/4760302     TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00 1602301/4760302     TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+[17]     0.0    0.00    0.00 4760302         TData::~TData() [17]
+-----------------------------------------------
+                0.00    0.00 4547849/4547849     char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [19]
+[18]     0.0    0.00    0.00 4547849         char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [18]
+                0.00    0.00 4547849/5103232     char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00 4547849/4547849     char* std::copy<char*, char*>(char*, char*, char*) [20]
+[19]     0.0    0.00    0.00 4547849         char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [19]
+                0.00    0.00 13643547/14198930     char* std::__niter_base<char*>(char*) [10]
+                0.00    0.00 4547849/4547849     char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [18]
+                0.00    0.00 4547849/5103232     char* std::__niter_wrap<char*>(char* const&, char*) [16]
+-----------------------------------------------
+                0.00    0.00  564981/4547849     TData::operator=(TData const&) [31]
+                0.00    0.00 3982868/4547849     TData::TData(TData const&) [21]
+[20]     0.0    0.00    0.00 4547849         char* std::copy<char*, char*>(char*, char*, char*) [20]
+                0.00    0.00 9095698/9095698     char* std::__miter_base<char*>(char*) [12]
+                0.00    0.00 4547849/4547849     char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [19]
+-----------------------------------------------
+                0.00    0.00   73057/3982868     TAvlNode::TAvlNode(TData, unsigned long) [48]
+                0.00    0.00  110981/3982868     TAvlFinal::DInsert() [47]
+                0.00    0.00  110981/3982868     TAvl::InsPrint(TData, unsigned long) [46]
+                0.00    0.00  111069/3982868     TAvlFinal::DRemove() [44]
+                0.00    0.00  111069/3982868     TAvl::DeletePrint(TData) [42]
+                0.00    0.00  111283/3982868     TAvl::Find(TData) [39]
+                0.00    0.00  222566/3982868     TAvlFinal::DFind(TData const&) [41]
+                0.00    0.00 1529561/3982868     TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00 1602301/3982868     TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+[21]     0.0    0.00    0.00 3982868         TData::TData(TData const&) [21]
+                0.00    0.00 3982868/4547849     char* std::copy<char*, char*>(char*, char*, char*) [20]
+-----------------------------------------------
+                0.00    0.00   46450/3207363     TAvl::RotateRight(TAvlNode*) [51]
+                0.00    0.00   47808/3207363     TAvl::RotateLeft(TAvlNode*) [50]
+                0.00    0.00 3113105/3207363     TAvl::ReBalance(TAvlNode*) [25]
+[22]     0.0    0.00    0.00 3207363         TAvl::ReHeight(TAvlNode*) [22]
+                0.00    0.00 6414726/12702180     TAvl::Height(TAvlNode const*) [11]
+                0.00    0.00 3207363/3207363     unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [23]
+-----------------------------------------------
+                0.00    0.00 3207363/3207363     TAvl::ReHeight(TAvlNode*) [22]
+[23]     0.0    0.00    0.00 3207363         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [23]
+-----------------------------------------------
+                0.00    0.00 3143727/3143727     TAvl::ReBalance(TAvlNode*) [25]
+[24]     0.0    0.00    0.00 3143727         TAvl::Balance(TAvlNode const*) [24]
+                0.00    0.00 6287454/12702180     TAvl::Height(TAvlNode const*) [11]
+-----------------------------------------------
+                0.00    0.00   15404/3121731     TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00 1539159/3121731     TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00 1567168/3121731     TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+[25]     0.0    0.00    0.00 3121731         TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00 3143727/3143727     TAvl::Balance(TAvlNode const*) [24]
+                0.00    0.00 3113105/3207363     TAvl::ReHeight(TAvlNode*) [22]
+                0.00    0.00   10243/10243       TAvl::RotateLeftRight(TAvlNode*) [52]
+                0.00    0.00    7397/23904       TAvl::RotateLeft(TAvlNode*) [50]
+                0.00    0.00    6718/23225       TAvl::RotateRight(TAvlNode*) [51]
+                0.00    0.00    6264/6264        TAvl::RotateRightLeft(TAvlNode*) [54]
+-----------------------------------------------
+                0.00    0.00  807623/2426382     TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00  808020/2426382     TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+                0.00    0.00  810739/2426382     TAvl::Find(TAvlNode*, TData) [40]
+[26]     0.0    0.00    0.00 2426382         operator>(TData const&, TData const&) [26]
+                0.00    0.00 2426382/7132500     operator<(TData const&, TData const&) [14]
+-----------------------------------------------
+                0.00    0.00  666968/2333572     main [6]
+                0.00    0.00 1666604/2333572     TAvlFinal::Upper(TData&) [37]
+[27]     0.0    0.00    0.00 2333572         TData::operator[](unsigned long) [27]
+-----------------------------------------------
+                0.00    0.00 1110766/1110766     char* std::copy<char const*, char*>(char const*, char const*, char*) [36]
+[28]     0.0    0.00    0.00 1110766         char const* std::__miter_base<char const*>(char const*) [28]
+-----------------------------------------------
+                0.00    0.00 1110766/1110766     char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+[29]     0.0    0.00    0.00 1110766         char const* std::__niter_base<char const*>(char const*) [29]
+-----------------------------------------------
+                0.00    0.00    9598/787547      TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00  110981/787547      TAvlFinal::DInsert() [47]
+                0.00    0.00  110981/787547      TAvl::InsPrint(TData, unsigned long) [46]
+                0.00    0.00  111069/787547      TAvlFinal::DRemove() [44]
+                0.00    0.00  111069/787547      TAvl::DeletePrint(TData) [42]
+                0.00    0.00  111283/787547      main [6]
+                0.00    0.00  111283/787547      TAvlFinal::DFind(TData const&) [41]
+                0.00    0.00  111283/787547      TAvl::Find(TData) [39]
+[30]     0.0    0.00    0.00  787547         std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+-----------------------------------------------
+                0.00    0.00    9598/564981      TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00  555383/564981      operator>>(std::istream&, TData&) [32]
+[31]     0.0    0.00    0.00  564981         TData::operator=(TData const&) [31]
+                0.00    0.00  564981/4547849     char* std::copy<char*, char*>(char*, char*, char*) [20]
+-----------------------------------------------
+                0.00    0.00  110981/555384      TAvlFinal::DInsert() [47]
+                0.00    0.00  111069/555384      TAvlFinal::DRemove() [44]
+                0.00    0.00  333334/555384      main [6]
+[32]     0.0    0.00    0.00  555384         operator>>(std::istream&, TData&) [32]
+                0.00    0.00  555383/555383      TData::TData(char const*) [33]
+                0.00    0.00  555383/564981      TData::operator=(TData const&) [31]
+                0.00    0.00  555383/4760302     TData::~TData() [17]
+-----------------------------------------------
+                0.00    0.00  555383/555383      operator>>(std::istream&, TData&) [32]
+[33]     0.0    0.00    0.00  555383         TData::TData(char const*) [33]
+                0.00    0.00  555383/555383      char* std::copy<char const*, char*>(char const*, char const*, char*) [36]
+-----------------------------------------------
+                0.00    0.00  555383/555383      char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+[34]     0.0    0.00    0.00  555383         char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [34]
+                0.00    0.00  555383/5103232     char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00  555383/555383      char* std::copy<char const*, char*>(char const*, char const*, char*) [36]
+[35]     0.0    0.00    0.00  555383         char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+                0.00    0.00 1110766/1110766     char const* std::__niter_base<char const*>(char const*) [29]
+                0.00    0.00  555383/14198930     char* std::__niter_base<char*>(char*) [10]
+                0.00    0.00  555383/555383      char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [34]
+                0.00    0.00  555383/5103232     char* std::__niter_wrap<char*>(char* const&, char*) [16]
+-----------------------------------------------
+                0.00    0.00  555383/555383      TData::TData(char const*) [33]
+[36]     0.0    0.00    0.00  555383         char* std::copy<char const*, char*>(char const*, char const*, char*) [36]
+                0.00    0.00 1110766/1110766     char const* std::__miter_base<char const*>(char const*) [28]
+                0.00    0.00  555383/555383      char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [35]
+-----------------------------------------------
+                0.00    0.00  110981/333333      TAvlFinal::DInsert() [47]
+                0.00    0.00  111069/333333      TAvlFinal::DRemove() [44]
+                0.00    0.00  111283/333333      TAvlFinal::DFind(TData const&) [41]
+[37]     0.0    0.00    0.00  333333         TAvlFinal::Upper(TData&) [37]
+                0.00    0.00 1666604/2333572     TData::operator[](unsigned long) [27]
+                0.00    0.00  333333/16621147     TData::Size() const [9]
+-----------------------------------------------
+                0.00    0.00       1/222051      main [6]
+                0.00    0.00  110981/222051      TAvlFinal::DInsert() [47]
+                0.00    0.00  111069/222051      TAvlFinal::DRemove() [44]
+[38]     0.0    0.00    0.00  222051         TData::TData() [38]
+-----------------------------------------------
+                0.00    0.00  111283/111283      TAvlFinal::DFind(TData const&) [41]
+[39]     0.0    0.00    0.00  111283         TAvl::Find(TData) [39]
+                0.00    0.00  111283/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  111283/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  111283/111283      TAvl::Find(TAvlNode*, TData) [40]
+                0.00    0.00  111283/4760302     TData::~TData() [17]
+-----------------------------------------------
+                0.00    0.00  111283/111283      TAvl::Find(TData) [39]
+[40]     0.0    0.00    0.00  111283         TAvl::Find(TAvlNode*, TData) [40]
+                0.00    0.00 1571343/7132500     operator<(TData const&, TData const&) [14]
+                0.00    0.00  810739/2426382     operator>(TData const&, TData const&) [26]
+-----------------------------------------------
+                0.00    0.00  111283/111283      main [6]
+[41]     0.0    0.00    0.00  111283         TAvlFinal::DFind(TData const&) [41]
+                0.00    0.00  222566/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  222566/4760302     TData::~TData() [17]
+                0.00    0.00  111283/333333      TAvlFinal::Upper(TData&) [37]
+                0.00    0.00  111283/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  111283/111283      TAvl::Find(TData) [39]
+-----------------------------------------------
+                0.00    0.00  111069/111069      TAvlFinal::DRemove() [44]
+[42]     0.0    0.00    0.00  111069         TAvl::DeletePrint(TData) [42]
+                0.00    0.00  111069/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  111069/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  111069/111069      TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00  111069/4760302     TData::~TData() [17]
+-----------------------------------------------
+                             1529561             TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00  111069/111069      TAvl::DeletePrint(TData) [42]
+[43]     0.0    0.00    0.00  111069+1529561 TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00 1567607/7132500     operator<(TData const&, TData const&) [14]
+                0.00    0.00 1539159/3121731     TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00 1529561/3982868     TData::TData(TData const&) [21]
+                0.00    0.00 1529561/4760302     TData::~TData() [17]
+                0.00    0.00  807623/2426382     operator>(TData const&, TData const&) [26]
+                0.00    0.00   28448/73057       TAvlNode::~TAvlNode() [49]
+                0.00    0.00    9598/9598        TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                             1529561             TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+-----------------------------------------------
+                0.00    0.00  111069/111069      main [6]
+[44]     0.0    0.00    0.00  111069         TAvlFinal::DRemove() [44]
+                0.00    0.00  222138/4760302     TData::~TData() [17]
+                0.00    0.00  111069/222051      TData::TData() [38]
+                0.00    0.00  111069/555384      operator>>(std::istream&, TData&) [32]
+                0.00    0.00  111069/333333      TAvlFinal::Upper(TData&) [37]
+                0.00    0.00  111069/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  111069/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  111069/111069      TAvl::DeletePrint(TData) [42]
+-----------------------------------------------
+                             1529244             TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+                0.00    0.00  110981/110981      TAvl::InsPrint(TData, unsigned long) [46]
+[45]     0.0    0.00    0.00  110981+1529244 TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+                0.00    0.00 1602301/3982868     TData::TData(TData const&) [21]
+                0.00    0.00 1602301/4760302     TData::~TData() [17]
+                0.00    0.00 1567168/7132500     operator<(TData const&, TData const&) [14]
+                0.00    0.00 1567168/3121731     TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00  808020/2426382     operator>(TData const&, TData const&) [26]
+                0.00    0.00   73057/73057       TAvlNode::TAvlNode(TData, unsigned long) [48]
+                             1529244             TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+-----------------------------------------------
+                0.00    0.00  110981/110981      TAvlFinal::DInsert() [47]
+[46]     0.0    0.00    0.00  110981         TAvl::InsPrint(TData, unsigned long) [46]
+                0.00    0.00  110981/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  110981/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  110981/110981      TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+                0.00    0.00  110981/4760302     TData::~TData() [17]
+-----------------------------------------------
+                0.00    0.00  110981/110981      main [6]
+[47]     0.0    0.00    0.00  110981         TAvlFinal::DInsert() [47]
+                0.00    0.00  221962/4760302     TData::~TData() [17]
+                0.00    0.00  110981/222051      TData::TData() [38]
+                0.00    0.00  110981/555384      operator>>(std::istream&, TData&) [32]
+                0.00    0.00  110981/333333      TAvlFinal::Upper(TData&) [37]
+                0.00    0.00  110981/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00  110981/3982868     TData::TData(TData const&) [21]
+                0.00    0.00  110981/110981      TAvl::InsPrint(TData, unsigned long) [46]
+-----------------------------------------------
+                0.00    0.00   73057/73057       TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [45]
+[48]     0.0    0.00    0.00   73057         TAvlNode::TAvlNode(TData, unsigned long) [48]
+                0.00    0.00   73057/3982868     TData::TData(TData const&) [21]
+-----------------------------------------------
+                0.00    0.00    9598/73057       TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00   28448/73057       TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+                0.00    0.00   35011/73057       TAvl::TreeDelete(TAvlNode*) [61]
+[49]     0.0    0.00    0.00   73057         TAvlNode::~TAvlNode() [49]
+                0.00    0.00   73057/4760302     TData::~TData() [17]
+-----------------------------------------------
+                0.00    0.00    6264/23904       TAvl::RotateRightLeft(TAvlNode*) [54]
+                0.00    0.00    7397/23904       TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00   10243/23904       TAvl::RotateLeftRight(TAvlNode*) [52]
+[50]     0.0    0.00    0.00   23904         TAvl::RotateLeft(TAvlNode*) [50]
+                0.00    0.00   47808/3207363     TAvl::ReHeight(TAvlNode*) [22]
+-----------------------------------------------
+                0.00    0.00    6264/23225       TAvl::RotateRightLeft(TAvlNode*) [54]
+                0.00    0.00    6718/23225       TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00   10243/23225       TAvl::RotateLeftRight(TAvlNode*) [52]
+[51]     0.0    0.00    0.00   23225         TAvl::RotateRight(TAvlNode*) [51]
+                0.00    0.00   46450/3207363     TAvl::ReHeight(TAvlNode*) [22]
+-----------------------------------------------
+                0.00    0.00   10243/10243       TAvl::ReBalance(TAvlNode*) [25]
+[52]     0.0    0.00    0.00   10243         TAvl::RotateLeftRight(TAvlNode*) [52]
+                0.00    0.00   10243/23904       TAvl::RotateLeft(TAvlNode*) [50]
+                0.00    0.00   10243/23225       TAvl::RotateRight(TAvlNode*) [51]
+-----------------------------------------------
+                                5806             TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00    9598/9598        TAvl::RemovePrint(TAvlNode*, TData, bool const&) [43]
+[53]     0.0    0.00    0.00    9598+5806    TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+                0.00    0.00   15404/3121731     TAvl::ReBalance(TAvlNode*) [25]
+                0.00    0.00    9598/787547      std::remove_reference<TData&>::type&& std::move<TData&>(TData&) [30]
+                0.00    0.00    9598/564981      TData::operator=(TData const&) [31]
+                0.00    0.00    9598/73057       TAvlNode::~TAvlNode() [49]
+                                5806             TAvl::RemoveMin(TAvlNode*, TAvlNode*) [53]
+-----------------------------------------------
+                0.00    0.00    6264/6264        TAvl::ReBalance(TAvlNode*) [25]
+[54]     0.0    0.00    0.00    6264         TAvl::RotateRightLeft(TAvlNode*) [54]
+                0.00    0.00    6264/23225       TAvl::RotateRight(TAvlNode*) [51]
+                0.00    0.00    6264/23904       TAvl::RotateLeft(TAvlNode*) [50]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [90]
+[55]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN4TAvl10RotateLeftEP8TAvlNode [55]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [90]
+[56]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN5TDataC2Ev [56]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [90]
+[57]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [57]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [57]
+[58]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN4TAvl10RotateLeftEP8TAvlNode [55]
+[59]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN5TDataC2Ev [56]
+[60]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [60]
+-----------------------------------------------
+                               70022             TAvl::TreeDelete(TAvlNode*) [61]
+                0.00    0.00       1/1           TAvl::~TAvl() [63]
+[61]     0.0    0.00    0.00       1+70022   TAvl::TreeDelete(TAvlNode*) [61]
+                0.00    0.00   35011/73057       TAvlNode::~TAvlNode() [49]
+                               70022             TAvl::TreeDelete(TAvlNode*) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           TAvlFinal::TAvlFinal() [64]
+[62]     0.0    0.00    0.00       1         TAvl::TAvl() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           TAvlFinal::~TAvlFinal() [65]
+[63]     0.0    0.00    0.00       1         TAvl::~TAvl() [63]
+                0.00    0.00       1/1           TAvl::TreeDelete(TAvlNode*) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[64]     0.0    0.00    0.00       1         TAvlFinal::TAvlFinal() [64]
+                0.00    0.00       1/1           TAvl::TAvl() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[65]     0.0    0.00    0.00       1         TAvlFinal::~TAvlFinal() [65]
+                0.00    0.00       1/1           TAvl::~TAvl() [63]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [55] _GLOBAL__sub_I__ZN4TAvl10RotateLeftEP8TAvlNode [25] TAvl::ReBalance(TAvlNode*) [15] char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*)
+  [56] _GLOBAL__sub_I__ZN5TDataC2Ev [53] TAvl::RemoveMin(TAvlNode*, TAvlNode*) [28] char const* std::__miter_base<char const*>(char const*)
+  [57] _GLOBAL__sub_I_main    [62] TAvl::TAvl()           [12] char* std::__miter_base<char*>(char*)
+  [58] __static_initialization_and_destruction_0(int, int) [63] TAvl::~TAvl() [29] char const* std::__niter_base<char const*>(char const*)
+  [59] __static_initialization_and_destruction_0(int, int) [33] TData::TData(char const*) [10] char* std::__niter_base<char*>(char*)
+  [60] __static_initialization_and_destruction_0(int, int) [21] TData::TData(TData const&) [16] char* std::__niter_wrap<char*>(char* const&, char*)
+  [50] TAvl::RotateLeft(TAvlNode*) [38] TData::TData()    [34] char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*)
+  [61] TAvl::TreeDelete(TAvlNode*) [17] TData::~TData()   [18] char* std::__copy_move_a<false, char*, char*>(char*, char*, char*)
+  [42] TAvl::DeletePrint(TData) [31] TData::operator=(TData const&) [35] char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*)
+  [45] TAvl::InsertPrint(TAvlNode*, TData, unsigned long, bool const&) [27] TData::operator[](unsigned long) [19] char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*)
+  [43] TAvl::RemovePrint(TAvlNode*, TData, bool const&) [48] TAvlNode::TAvlNode(TData, unsigned long) [23] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [51] TAvl::RotateRight(TAvlNode*) [49] TAvlNode::~TAvlNode() [13] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [52] TAvl::RotateLeftRight(TAvlNode*) [41] TAvlFinal::DFind(TData const&) [36] char* std::copy<char const*, char*>(char const*, char const*, char*)
+  [54] TAvl::RotateRightLeft(TAvlNode*) [37] TAvlFinal::Upper(TData&) [20] char* std::copy<char*, char*>(char*, char*, char*)
+  [39] TAvl::Find(TData)      [47] TAvlFinal::DInsert()   [30] std::remove_reference<TData&>::type&& std::move<TData&>(TData&)
+  [40] TAvl::Find(TAvlNode*, TData) [44] TAvlFinal::DRemove() [26] operator>(TData const&, TData const&)
+  [11] TAvl::Height(TAvlNode const*) [64] TAvlFinal::TAvlFinal() [14] operator<(TData const&, TData const&)
+  [24] TAvl::Balance(TAvlNode const*) [65] TAvlFinal::~TAvlFinal() [32] operator>>(std::istream&, TData&)
+  [46] TAvl::InsPrint(TData, unsigned long) [9] TData::Size() const
+  [22] TAvl::ReHeight(TAvlNode*) [8] TData::operator[](unsigned long) const
