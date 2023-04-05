@@ -15,10 +15,10 @@ function Control() {
                     {bool
                         ? (<>
                         <button disabled className="border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl self-end">&#8595;</button>
-                        <button onClick={e => {dispatch(setBool(false)); dispatch(setVisible(false))}} className="hover:bg-gray-light border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl">&#8593;</button>
+                        <button onClick={() => {dispatch(setBool(false)); dispatch(setVisible(false))}} className="hover:bg-gray-light border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl">&#8593;</button>
                         </>)
                         : (<>
-                        <button onClick={e => {dispatch(setBool(true)); dispatch(setVisible(false))}} className="hover:bg-gray-light border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl self-end">&#8595;</button>
+                        <button onClick={() => {dispatch(setBool(true)); dispatch(setVisible(false))}} className="hover:bg-gray-light border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl self-end">&#8595;</button>
                         <button disabled className="border-gray-dark border-2 rounded w-[40px] h-[40px] text-2xl">&#8593;</button>
                         </>)
                     }

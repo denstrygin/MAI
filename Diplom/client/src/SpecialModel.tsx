@@ -33,7 +33,7 @@ function SpecialModel() {
         <div className={'flex flex-col w-[96%] absolute top-[32px] transAddition' + topMargin}>
             <div className='rounded bg-white w-full shadow-lg mb-4 text-center font-serif font-bold text-2xl p-4'>Поиск символов на узконаправленных моделях</div>
             <div className='flex justify-between'>
-                {listOfModels.map((item, index) => <DropBoxModel key={index} header={item.header} imgUrl={item.imgUrl} altImg={item.altImg} />)}
+                {listOfModels.map((item, index) => <DropBoxModel key={index} id={index} header={item.header} imgUrl={item.imgUrl} altImg={item.altImg} />)}
             </div>
         </div>
     );

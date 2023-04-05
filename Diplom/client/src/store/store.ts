@@ -5,7 +5,7 @@ import questionEventSlice from './questionEventReducer';
 
 const rootReducer = combineReducers({
     mouseEventSlice,
-    questionEventSlice
+    questionEventSlice,
 })
 
 export function setupStore() {

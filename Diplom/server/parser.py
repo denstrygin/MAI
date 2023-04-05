@@ -24,10 +24,4 @@ def parserDutchStyleLife():
         return 'Parser Error'
 
 if __name__ == "__main__":
-    res = parserDutchStyleLife()
-    keys = res.keys()
-    ans = {}
-    for key in keys:
-        skeys = list(res[key].keys())
-        ans.update({key: skeys})
-    print(ans)
+    print(parserDutchStyleLife())

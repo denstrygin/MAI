@@ -1,8 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from parser import parserDutchStyleLife
+from flask_cors import CORS
 import pymongo
 
 app = Flask(__name__)
+CORS(app)
 
 def db_connection():
     try:
@@ -24,7 +26,6 @@ def parse_response(coll, id):
         for key in keys:
             skeys = list(i[key].keys())
             response.update({key: skeys})
-    print(response)
     return response
 
 @app.route('/')
@@ -36,7 +37,7 @@ def refresh_db():
     try: 
         exelList = parserDutchStyleLife()
         if exelList == 'Parser Error':
-            return 'Parser Error'
+            return exelList
         keys, count = exelList.keys(), 0
         coll = db_connection()
         if coll == "Connection to Database Error":
@@ -49,13 +50,13 @@ def refresh_db():
         return 'Error'
     return 'Success'
 
-@app.route('/list_of_segments')
+@app.route('/list_of_segments', methods=['GET'])
 def list_of_segments():
     id = request.args.get('id')
     coll = db_connection()
     if coll == "Connection to Database Error":
         return coll
-    return parse_response(coll, id)
+    return jsonify(parse_response(coll, id))
 
 @app.route('/list_of_symbols')
 def list_of_symbols():
