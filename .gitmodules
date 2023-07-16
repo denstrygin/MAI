@@ -1,3 +1,6 @@
 [submodule "RDB"]
 	path = RDB
 	url = git@github.com:denstrygin/RDB.git
+[submodule "Diplom"]
+	path = Diplom
+	url = git@github.com:denstrygin/Diplom.git
